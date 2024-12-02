@@ -3,7 +3,7 @@ import Navbar from './Components/Navbar'
 
 const App = () => {
   return (
-    <div>
+    <div className='bg-[#210000]'>
      <Navbar/>
     </div>
   )
