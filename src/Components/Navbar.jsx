@@ -34,7 +34,7 @@ const Navbar = () => {
        initial ={{opacity:0,y:-100}}
        animate ={{opacity:1, y:0}}
        transition={{duration:0.8}}
-      className='container mx-auto hidden md:flex justify-between items-center py-5'>
+      className='container mx-auto hidden md:flex justify-between items-center py-5 fixed'>
         <div className='text-xl lg:text-2xl font-bold flex items-center gap-1'>
           <span className='text-white'>NUS</span>
           <span className='text-orange-600'>NAN</span>
