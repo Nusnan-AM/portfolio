@@ -9,13 +9,14 @@ const Navbar = () => {
   const variants = {
     open: { clipPath: 'circle(1000px at 43px 43px)' },
     transition: {
-      type: 'spring'
+      type: 'spring',
+      duration: 1.8,
     },
     closed: {
       clipPath: 'circle(25px at 43px 37px)',
       transition: {
         type: 'spring',
-        duration: 1
+        duration: 1.8,
       }
     }
   }
@@ -39,7 +40,7 @@ const Navbar = () => {
           <span className='text-orange-600'>NAN</span>
         </div>
         <div>
-          <ul className='hidden md:flex items-center space-x-6 list-none lg:text-lg md:text-base text-white cursor-pointer'>
+          <ul className='hidden md:flex items-center space-x-6 list-none lg:text-lg md:text-base text-white cursor-pointer font-semibold bg-transparent'>
             {items.map(({ id, text }) => (
               <li key={id}>{text}</li>
             ))}
@@ -65,7 +66,7 @@ const Navbar = () => {
                   {items.map(({ id, text }) => (
                     <li
                       key={id}
-                      className='hover:text-orange-500 duration-200 cursor-pointer '
+                      className='hover:text-orange-500 duration-200 cursor-pointer font-bold'
                     >
                       {text}
                     </li>
