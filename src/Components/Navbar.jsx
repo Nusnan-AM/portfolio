@@ -35,18 +35,18 @@ const Navbar = () => {
        animate ={{opacity:1, y:0}}
        transition={{duration:0.8}}
       className='container mx-auto hidden md:flex justify-between items-center py-5 fixed'>
-        <div className='text-xl lg:text-2xl font-bold flex items-center gap-1'>
+        <div className='text-xl lg:text-2xl font-bold flex items-center gap-1 ml-5'>
           <span className='text-white'>NUS</span>
           <span className='text-orange-600'>NAN</span>
         </div>
         <div>
-          <ul className='hidden md:flex items-center space-x-6 list-none lg:text-lg md:text-base text-white cursor-pointer font-semibold bg-transparent'>
+          <ul className='hidden md:flex items-center space-x-6 list-none lg:text-lg md:text-base text-white cursor-pointer font-semibold'>
             {items.map(({ id, text }) => (
               <li key={id}>{text}</li>
             ))}
           </ul>
         </div>
-        <a className='md:text-base lg:text-lg bg-orange-600 hover:bg-orange-400 text-white px-4 py-2 rounded-full cursor-pointer'>
+        <a className='md:text-base lg:text-lg bg-orange-600 hover:bg-orange-400 text-white px-4 py-2 rounded-full cursor-pointer mr-5'>
           Download CV{''}
         </a>
       </motion.div>
