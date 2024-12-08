@@ -1,6 +1,6 @@
 import React from 'react'
 import Marquee from 'react-fast-marquee'
-import html from '../assets/skill/html.png'
+import Html from '../assets/skill/Html.png'
 import Css from '../assets/skill/Css.png'
 import Bootsrap from '../assets/skill/Bootsrap.png'
 import JavaScript from '../assets/skill/JavaScript.png'
@@ -36,7 +36,7 @@ const Skills = () => {
     <div>
       <Marquee direction="right" speed={100} delay={3}>
         <div className="image_wrapper h-28 w-28  border border-orange-400 m-5 p-3 rounded-2xl">
-          <img src={html} alt="" />
+          <img src={Html} alt="" />
         </div>
         <div className="image_wrapper h-28 w-28  border border-orange-400 m-5 p-3 rounded-2xl">
           <img src={Css} alt="" />
