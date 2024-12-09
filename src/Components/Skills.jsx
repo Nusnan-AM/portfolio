@@ -28,10 +28,9 @@ import mongodbs from '../assets/skill/mongodbs.png'
 
 const Skills = () => {
   return (
-    <div >
-    <div className="">
-      <h1>Skills</h1>
-    </div>
+    <div className="container text-center">
+      <h2 className='text-3xl md:text-4xl font-bold mb-8 text-orange-500'>SKILLS</h2>
+
 
     <div>
       <Marquee direction="right" speed={100} delay={3}>
@@ -71,7 +70,7 @@ const Skills = () => {
       </Marquee>
 
       <Marquee direction="left" speed={100} delay={5}>
-        <div className="image_wrapper h-28 w-28  border border-orange-400 m-5 p-3 rounded-2xl">
+        <div className="image_wrapper h-28 w-28  border border-orange-400 m-5 p-3 rounded-2xl ">
           <img src={aws} alt="" />
         </div>
         <div className="image_wrapper h-28 w-28  border border-orange-400 m-5 p-3 rounded-2xl">
