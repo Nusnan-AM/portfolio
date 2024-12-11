@@ -22,17 +22,36 @@ import postman from '../assets/skill/postman.png'
 import node from '../assets/skill/node.png'
 import mysql from '../assets/skill/mysql.png'
 import mongodbs from '../assets/skill/mongodbs.png'
-
+import { motion } from 'motion/react'
+import { useInView } from 'react-intersection-observer';
 
 
 
 const Skills = () => {
+
+  const {ref,inView} =useInView(
+    {
+      triggerOne:true,
+      threshold:0.2,
+    }
+  )
   return (
     <div className="container text-center" id='skill'> 
-      <h2 className='text-3xl md:text-4xl font-bold mb-8 text-orange-500'>SKILLS</h2>
+      <motion.h2 
+        ref={ref}
+        initial ={{opacity:0, y:-100}}
+        animate ={inView ? {opacity:1, y:0}:0}
+        transition={{delay:0.3, duration:0.5}}
+      className='text-3xl md:text-4xl font-bold mb-8 text-orange-500'>SKILLS</motion.h2>
 
 
     <div>
+      <motion.div
+        ref={ref}
+        initial={{opacity:0,y:100}}
+        animate ={inView ? {opacity:1,y:0}:{}}
+        transition={{delay:0.3,duration:0.5}}
+      >
       <Marquee direction="right" speed={100} delay={3}>
         <div className="image_wrapper h-28 w-28  border border-orange-400 m-5 p-3 rounded-2xl">
           <img src={Html} alt="" />
@@ -68,7 +87,12 @@ const Skills = () => {
           <img src={java} alt="" />
         </div>       
       </Marquee>
-
+      </motion.div>
+      <motion.div
+        ref={ref}
+        initial={{opacity:0,x:100}}
+        animate ={inView ? {opacity:1,x:0}:{}}
+        transition={{delay:0.4,duration:0.5}}>
       <Marquee direction="left" speed={100} delay={5}>
         <div className="image_wrapper h-28 w-28  border border-orange-400 m-5 p-3 rounded-2xl ">
           <img src={aws} alt="" />
@@ -104,6 +128,7 @@ const Skills = () => {
           <img src={figma} alt="" />
         </div>         
       </Marquee>
+      </motion.div>
     </div>
   </div>
   )
