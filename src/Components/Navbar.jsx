@@ -57,7 +57,7 @@ const Navbar = () => {
       
         </div>
         <a className='md:text-base lg:text-lg bg-orange-600 hover:bg-orange-400 text-white px-4 py-2 rounded-full cursor-pointer mr-5'>
-          Download CV{''}
+          Hire Me{''}
         </a>
       </motion.div>
       <div className='flex md:hidden justify-between'>
@@ -85,7 +85,7 @@ const Navbar = () => {
                   ))}
                 </ul>
                 <a className='text-lg bg-orange-600 hover:bg-orange-400 text-white px-3 py-2 mt-5 rounded-full'>
-                  Download CV{''}
+                  Hire Me{''}
                 </a>
               </div>
             )}
