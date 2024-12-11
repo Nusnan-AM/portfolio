@@ -28,7 +28,7 @@ import mongodbs from '../assets/skill/mongodbs.png'
 
 const Skills = () => {
   return (
-    <div className="container text-center">
+    <div className="container text-center" id='skill'> 
       <h2 className='text-3xl md:text-4xl font-bold mb-8 text-orange-500'>SKILLS</h2>
 
 

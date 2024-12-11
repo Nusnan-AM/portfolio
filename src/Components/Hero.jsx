@@ -58,7 +58,9 @@ const Hero = () => {
           delay:1.5,
           duration:0.5
         }}
-        className='bg-orange-500 text-white px-6 py-3 rounded-full'>Hire me</motion.button>
+        className='bg-orange-500 text-white px-6 py-3 rounded-full' onClick={"#about"}>
+          <a href='https://www.linkedin.com/in/mohamed-nusnan-8993641b8/'>LinkedIn</a>
+        </motion.button>
         <motion.button 
         initial={{opacity:0,x:100}}
         animate={{opacity:1,x:0}}
@@ -66,7 +68,8 @@ const Hero = () => {
           delay:1.5,
           duration:0.5
         }}
-        className=' text-white border-white px-6 py-3 rounded-full'>My Story</motion.button>
+        
+        className=' text-white border-white px-6 py-3 rounded-full'><a href='https://github.com/Nusnan-AM'>Github</a></motion.button>
         </div>
       </motion.div>
     </div>

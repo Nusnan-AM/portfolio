@@ -36,7 +36,7 @@ const {ref,inView} =useInView(
   }
 )
   return (
-    <div className='py-12'>
+    <div className='py-12' id='project'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <motion.h2 
         ref={ref}
