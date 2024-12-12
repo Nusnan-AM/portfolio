@@ -9,14 +9,17 @@ import Contact from './Components/Contact'
 
 const App = () => {
   return (
-    <div className='bg-[#1d0000]'>
-     <Navbar/>
-     <Hero/>
-     <About/>
-     <Skills/>
-     <Project/>
-     <Contact/>
-     
+    <div className='bg-[#1d0000] w-full flex flex-row justify-center'>
+
+      <div className='container'>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills/>
+      <Project />
+      <Contact />
+      </div>
+
     </div>
   )
 }
