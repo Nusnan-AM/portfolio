@@ -3,7 +3,6 @@ import { TiThMenu } from 'react-icons/ti'
 import { MdClose } from 'react-icons/md'
 import { motion } from 'motion/react'
 import { Link } from 'react-scroll'
-import { FaGithub } from 'react-icons/fa'
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
@@ -53,8 +52,10 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <a className='md:text-base lg:text-lg bg-orange-600 hover:bg-orange-400 text-white px-4 py-2 rounded-full cursor-pointer mr-5'>
-          Hire Me{''}
+        <a 
+        href='#contact'
+        className='md:text-base lg:text-lg bg-orange-600 hover:bg-orange-400 text-white px-4 py-2 rounded-full cursor-pointer mr-5'>
+          Hire Me
         </a>
       </motion.div>
       <div className='flex md:hidden justify-between w-full'>
@@ -65,7 +66,7 @@ const Navbar = () => {
           <div>
             <motion.div
               variants={variants}
-              className='bg-white  h-screen text-black fixed z-10'
+              className='bg-white  h-screen w-2/4 text-black fixed z-10'
               onClick={() => setMenu(prev => !prev)}
             >
               <div className='px-7 py-5'>
@@ -85,8 +86,11 @@ const Navbar = () => {
                       </li>
                     ))}
                   </ul>
-                  <a className='text-lg bg-orange-600 hover:bg-orange-400 text-white px-3 py-2 mt-5 rounded-full'>
-                    Hire Me{''}
+                  <a
+                    className='text-lg bg-orange-600 hover:bg-orange-400 text-white px-3 py-2 mt-5 rounded-full'
+                    href='#contact'
+                  >
+                    Hire Me
                   </a>
                 </div>
               )}
