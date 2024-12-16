@@ -36,7 +36,7 @@ const Skills = () => {
     }
   )
   return (
-    <div className=" w-4/5 md:w-full 2xl: w-auto text-center" id='skill'> 
+    <div className="md:w-full 2xl: w-auto text-center" id='skill'> 
       <motion.h2 
         ref={ref}
         initial ={{opacity:0, y:-100}}
